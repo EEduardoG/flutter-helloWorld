@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 
 // ignore: slash_for_doc_comments
 /// STATEFUL WIDGETS
-/// -Consta de dos clases.
-/// De un StatefulWidget y de un State que maneje el estado de StatefulWidget
+/// -Stateful widgets consists of two classes.
+/// The Statefulwidget that is the widget itself and a state class which is the one
+/// that handles the state of the widget.
 /// **/
 
-//Este es nuestro Stateful Widget.
+//This is a Statefulwidget
 class CounterWidget extends StatefulWidget {
-  //Retorna una nueva instancia de nuestro widget.
+  //Return a new instance of our widget.
   @override
   createState() => _CounterWidgetState();
 }
 
-//Maneja el estado de nuestro widget.
+//State handler of our widget
 class _CounterWidgetState extends State<CounterWidget> {
   int _count = 0;
   @override
